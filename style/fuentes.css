@@ -1,0 +1,44 @@
+/*fuentes*/
+@font-face {
+font-family: 'JuraMedium';
+src: url('fonts/Jura-Medium-webfont.eot');
+src: url('fonts/Jura-Medium-webfont.ttf') format('truetype'),
+	url('fonts/Jura-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Jura-Medium-webfont.woff') format('woff'),
+	url('fonts/Jura-Medium-webfont.svg#JuraMedium') format('svg');
+font-weight: normal;
+font-style: normal;}
+@font-face {
+font-family: 'JuraDemiBold';
+src: url('fonts/Jura-DemiBold-webfont.eot');
+src: url('fonts/Jura-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Jura-DemiBold-webfont.woff') format('woff'),
+	url('fonts/Jura-DemiBold-webfont.ttf') format('truetype'),
+	url('fonts/Jura-DemiBold-webfont.svg#JuraDemiBold') format('svg');
+font-weight: normal;
+font-style: normal;}
+@font-face {font-family: 'SantanaBold';
+src: url('fonts/Santana-Bold-webfont.eot');
+src: url('fonts/Santana-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Santana-Bold-webfont.woff') format('woff'),
+	url('fonts/Santana-Bold-webfont.ttf') format('truetype'),
+	url('fonts/Santana-Bold-webfont.svg#SantanaBold') format('svg');
+font-weight: normal;
+font-style: normal; }
+@font-face {font-family: 'VeggieburgerLight';
+src: url('fonts/VeggiLig-webfont.eot');
+src: url('fonts/VeggiLig-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/VeggiLig-webfont.woff') format('woff'),
+	url('fonts/VeggiLig-webfont.ttf') format('truetype'),
+	url('fonts/VeggiLig-webfont.svg#VeggieburgerLight') format('svg');
+font-weight: normal;
+font-style: normal;}
+@font-face {font-family: 'robotoC';
+src: url('fonts/RobotoCondensed-Regular-webfont.eot');
+src: url('fonts/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+	url('fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+	url('fontsRobotoCondensed-Regular-webfont.svg#robotoC') format('svg');
+font-weight: normal;
+font-style: normal;}
+/*fin fuentes*/

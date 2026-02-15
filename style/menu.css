@@ -1,0 +1,154 @@
+#menuBar{
+	border-top:1px solid #FFF;
+	border-bottom:3px double #FFF;
+	text-align:center;
+	display:block;
+	font-family:SantanaBold, Comic Sans MS, Arial;
+	background-color:#000;
+	width:100%;
+	z-index:20;
+}
+#menu{
+	list-style:none;
+	display:block;
+	width:100%;
+	height:auto;
+	min-height:30px;
+	max-height:30px;
+	font-size:9pt;
+}
+#menu li{
+	display:inline-block;
+	position:relative;
+	height:100%;
+	font-weight:bold;
+	cursor:pointer;
+	z-index:10;
+}
+#menu li a{
+	display:block;
+	color:#ccc;
+	height:30px;
+	padding:7px 15px;
+	text-decoration:none;
+	vertical-align:middle;
+}
+#menu li a.active{
+	color: #F9CF51;
+}
+#menu li a.active,#menu li:hover{
+	background:linear-gradient(to bottom, rgba(157,30,47,.2) 0%, rgba(157,30,47,.8) 45%, rgba(157,30,47,.8) 55%, rgba(157,30,47,.2) 100%);
+}
+#menu li a.active:hover{
+	background:transparent;
+}
+#menu li a:hover{
+	color:#F9CF51;
+}
+#menu a img.sbm{
+	display:inline-block;
+	position:absolute;
+	float:right;
+	margin-left:10px;
+}
+#menu ul{
+	display:none;
+	position:absolute;
+	box-shadow:1px 2px 2px #000;
+	margin-top:-2px;
+	padding:0px;
+	background-color:#e1999e;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	min-width:160px;
+	width:100%;
+	padding-bottom:5px;
+}
+#menu ul li{display:block;}
+#menu ul li:nth-child(even){background-color:rgba(157,30,47,.2);}
+#menu ul a{display:block;text-align:center;width:100%;color:#eee;font-weight:normal;height:22px;padding:4px 0;}
+#menu ul a.sessClose{color:#aaa;text-shadow:0px 0px 2px #000,0px 0px 2px #000,0px 0px 2px #000,0px 0px 2px #000;
+	font-weight:bold;padding:5px 0px;margin:3px 0px;border-top:1px dashed #fff;border-bottom:1px dashed #fff;
+	height:25px;
+}
+#menu ul a.sessClose:hover{
+	color:#fff;
+}
+#menu ul li a:hover{
+	color:#888;
+	background-color:rgba(0,0,0,0.1);
+	border-radius:0px;
+	font-weight:bold;
+}
+/*desde aqui son los divs de edición*/
+.menuEdicion{
+	display:block;
+	position:relative;
+	width:100%;
+	border:0px solid #000;
+}
+.menuEdicion .a-head{
+	min-height:10px;
+}
+.menuEdicion .separador{
+	background:#9d1e2f;
+	width:1px;
+	display:inline-block;
+	margin:0px 2px;
+	min-height:25px;
+	position:relative;
+	vertical-align:middle;
+}
+.menuEdicion #add, .menuEdicion #del, .menuEdicion #edit, .menuEdicion #search, .menuEdicion #xls{
+	display:inline-block;
+	position:relative;
+	margin:0px 1px;
+}
+.menuEdicion img{
+	display:inline;
+	position:relative;
+	vertical-align:middle;
+	height:16px;
+}
+.menuEdicion div a{
+	position:relative;
+	margin:1px 2px;
+	text-decoration:none;
+	color:#800000;
+	cursor:pointer;
+	vertical-align:middle;
+}
+.menuEdicion div a.deshabil{
+	text-decoration:none;
+	color:#aaa;
+}
+
+.menuEdicion .text0 input, .menuEdicion .text0 select{
+	display:inline-block;
+	border:none;
+	position:relative;
+	margin:0 2px;
+	padding:0;
+	font-family:SantanaBold,Comic Sans MS,Arial;
+	background-color:transparent;
+}
+.menuEdicion .text0 input{
+	width:55%;
+}
+.menuEdicion .text0 select{
+	width:85px;
+}
+.menuEdicion .text0 .deshabil{
+	color:#888888;
+}
+.menuEdicion .text0{
+	display:inline-block;
+	position:relative;
+	border:1px solid #9d1e2f;
+	border-radius:8px;
+	padding:0;
+	margin:0;
+	width:270px;
+}
+
+

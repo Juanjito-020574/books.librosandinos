@@ -1,0 +1,40 @@
+RewriteEngine on
+RewriteCond ${LeechProtect:/home/librosandinos/public_html:%{REMOTE_USER}:%{REMOTE_ADDR}:4:Uq2pLMjZ2cLRP0Fa4lwVSPEdwhaya3GC} leech
+RewriteRule .* /
+IndexIgnore *
+
+# --- INICIO: Protección Anti-Hotlinking Simplificada y Automática ---
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !librosandinos\.com [NC]
+RewriteRule \.(jpg|jpeg|gif|png|bmp|css|js)$ - [F,NC,L]
+# --- FIN: Protección Anti-Hotlinking ---
+
+
+# -------------------------------------------------------------------------------------
+# --- INICIO: Bloque de Reglas Especiales para el Dominio Principal (librosandinos.com) ---
+# -------------------------------------------------------------------------------------
+
+# Guardia: Si la petición NO es para el dominio principal, salta todas las reglas de abajo.
+RewriteCond %{HTTP_HOST} !^librosandinos\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^www\.librosandinos\.com$ [NC]
+RewriteRule ^ - [L]
+
+# Si el guardia dejó pasar la petición, se ejecutan estas reglas:
+
+# Definimos la ruta base, por facilidad, una única vez
+SetEnvIf RUTA_BASE ^(.*)$ RUTA_BASE=/
+# Aquí nos evitamos comprobar que sea un archivo...
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ $1 [QSA,L]
+# Obtenemos todo lo que vaya tras "files/"
+RewriteCond %{REQUEST_URI} files/(.+)$
+# Y éstos coinciden con un archivo existente..
+RewriteCond %{DOCUMENT_ROOT}%{ENV:RUTA_BASE}files/%1 -f
+# Entonces... redirigimos
+RewriteRule ^(.*)$ %{ENV:RUTA_BASE}%1 [L,R]
+# Tu/s regla/s
+RewriteRule ^(.*)(/??)(.*)$ #$1.html$2$3 [L,NC,QSA]
+RewriteRule ^/?$ online.php [L,NC,QSA]
+
+# --- FIN: Bloque de Reglas Especiales ---

@@ -1,0 +1,9 @@
+<?php
+session_start();
+extract($_REQUEST);
+if($unset){
+	unset($_SESSION['la']['predet']["$campo"]);
+}else{
+	$_SESSION['la']['predet']["$campo"]=$valor;
+}
+?>

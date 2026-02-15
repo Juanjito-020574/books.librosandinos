@@ -1,0 +1,100 @@
+aside #search,aside #cart {
+	margin: 0px auto 10px auto;
+	border: 1px solid #9e1d2f;
+}
+.asTitle{
+	color:#FFC1C1;
+	background-color:#9e1d2f;
+	padding:4px;
+	font-family:SantanaBold, Comic Sans MS, Arial ;
+}
+.asContent{
+	padding:5px;
+	background-color:#FFC1C1;
+	min-height:50px;
+	font-size:9pt;
+}
+.asContent .comentario{
+	text-align:justify;
+	margin:4px 8px;
+}
+.findToggle{
+	font-size:8pt;
+	text-transform:uppercase;
+	color:#000;
+	text-decoration:underline;
+	cursor:pointer;
+}
+#advFind, #titleAdv, #toggleAdv{
+	display:none;
+}
+#advFind .tabTit{text-align:left;}
+#advFind .tabTit>div{
+	display:inline-block;
+	border:1px solid;
+	padding:4px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	margin-top:8px;
+	z-index:15;
+	background-color:#f29ca1;
+	margin-bottom:-1px;
+	cursor:pointer;
+	font-size:8pt;
+}
+
+#advFind .tabTit>div.select {
+	border-bottom-color:#ffc1c1;
+	background-color:#ffc1c1;
+}
+
+#advFind .tabView>div {
+	display:none;
+	border-top:1px solid;
+	z-index:10;
+}
+
+#advFind .tabView>div.use {
+	display:block;
+}
+.l-link{
+	clear:both;
+	display:block;
+	width:100%;
+	margin:4px auto;
+	border-bottom:1px solid #FFF;
+	text-decoration:none;
+}
+.l-link:first-child{
+	border-top:1px solid #FFF;
+	padding-top:4px;
+}
+/*Aqui van las tablas con scrool*/
+.table_scroll{
+	visibility:visible;
+	width:100%;
+	display:block;
+}
+.table_scroll table,.table_scroll thead,.table_scroll tbody,.table_scroll tfoot{
+	display:block;
+	width:100%
+}
+.table_scroll thead tr,.table_scroll tfoot tr{
+	width:100%;
+	display:inline-table;
+}
+.table_scroll tbody{
+	overflow-y:hidden;
+}
+.table_scroll tbody td{
+	font-size:8pt;font-family:serif;height:35px;word-break:normal;
+}
+/*Solo para el shoping_cart*/
+#shopping_cart_items td:nth-child(1),#shopping_cart_items td:nth-child(3){
+	width:10%;
+}
+#shopping_cart_items td:nth-child(2){
+	width:90%;
+	text-align:justify;
+}
+

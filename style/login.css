@@ -1,0 +1,69 @@
+#login{
+	display:inline-block;
+	text-align:center;
+	font-family:Century Gothic,Arial,Verdana;
+	min-height:77px;
+	min-width:150px;
+	max-width:160px;
+	width:50%;
+	float:right;
+	background-color:rgba(157, 30, 47, 0.6);
+}
+#logg, .logg{
+	padding:0;
+	margin:0;
+	font-size:8pt;
+	max-width:260px;
+}
+#login .formLog{
+	display:block;
+	position:relative;
+	border:1px solid #ccc;
+	box-shadow:0px 0px 0px #800000;
+	border-radius:5px;
+	margin:3px;
+	padding:0px;
+}
+#login input{
+	text-align:left;
+	width:100%;
+	margin:1px;
+	font-family:robotoC;
+	color:#fff;
+}
+#login input.submitLog, #login .aLog,.aLog{
+	display:inline-block;
+	font-size:8pt;
+	width:60px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:5px;
+	margin:2px;
+	padding:2px;
+	cursor:pointer;
+	background-color: #d24b4b;
+	color: #bbb;
+}
+#login input.submitLog:hover, #login .aLog:hover,.aLog:hover{
+	color:#eee;
+	background-color: rgba(157,30,47,.8);
+	border: 1px solid #bbb;
+	text-shadow:1px 0px 2px #eeee;
+}
+#login input::placeholder{
+	color:#aaa;
+}
+#login #msg{
+	text-align:center;
+}
+#msgUsr{
+	border:0px solid silver;
+	position:relative;
+	font-family:Century Gothic,Arial,Verdana;
+	font-size:10pt;
+}
+#msgUsr strong{
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#login #scpt{display:none;}

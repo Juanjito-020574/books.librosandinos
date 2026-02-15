@@ -1,0 +1,9 @@
+<?PHP
+if(!isset($_SESSION))session_start();
+extract($_REQUEST);
+if(isset($_REQUEST['cliente'])){
+	$_SESSION['la']['compras']['cliente']=array('clid'=>$clid,'clname'=>$clname);
+}else{
+	$_SESSION['la']['compras']['productos']["$id"]['orden']=$val;
+}
+?>

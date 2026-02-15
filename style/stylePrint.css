@@ -1,0 +1,390 @@
+@page{
+	size:8.5in 11in;
+	margin-top:10mm;
+	margin-bottom:5mm;
+	margin-left:5mm;
+	margin-right:5mm;
+}
+@page:first{
+	margin-top:2mm;
+}
+header,section,footer,aside,nav,article,figure,figcaption,hgroup{
+	display: block;
+}
+body{
+	font-family: robotoC, Arial Narrow, Times New Roman;
+	color: #000000;
+	background-color:transparent;
+	-ie-print-color-adjust:exact;
+	-moz-print-color-adjust:exact;
+	-khtml-print-color-adjust:exact;
+	-webkit-print-color-adjust:exact;
+	print-color-adjust:exact;
+	height:100%;
+	overflow:visible;
+}
+#cabecera,#menuBar,#pie,#tools,#links,#cuerpo{
+	display: none;
+}
+#v-ref{
+	margin:10px 0;
+}
+#gost{
+	display:block;
+	position:relative;
+	background-color:transparent;
+	border:0px solid black;
+	margin:0px;
+	padding:0px;
+	width:100vw;
+	height:auto;
+	min-height:calc(100%);
+	overflow:visible;
+}
+#gost #gost2{
+	display:none;
+}
+#gost #workdata_aux{
+	display:none;
+}
+#gost #workdata{
+	display:none;
+}
+#gost #wd{
+	background-color:transparent;
+	right:0px;
+	overflow:visible;
+	height:auto;
+	position:relative;
+}
+#gost #workdata.print{
+	border:0px solid;
+	max-width:21.59cm;
+	width:100%;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	border-radius:0px;
+	background-color:transparent;
+	overflow:hidden;
+	top:0;left:0;right:0;
+	transform:translate(0,0);
+	display:block;
+}
+#gost #workdata_search{
+	display:none;
+}
+#v-logo{
+	display:block;
+	position:absolute;
+	color:#000;
+	top:2mm;
+	z-index:100;
+}
+#gost .title_list{
+	top:1.2cm;
+	position:relative;
+	color:#000;
+	display:block;
+/*	overflow:visible;*/
+}
+#gost #list_detalle{
+	height:auto;
+	top:4cm;
+	width:100vw;
+	position:absolute;
+	overflow-y:visible;
+	overflow-x:visible;
+}
+#ventas_approval_stamp{
+	top:4.5cm;
+	display:block;
+	width:100%;
+	border:0px solid;
+}
+#ventas_approval_stamp img{
+	float:right;
+	height:2cm;
+	margin-right:.6cm;
+}
+#workdata #form-campos{
+	background-color:#transparent;
+}
+#workdata form{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	border:0px solid red;
+	display:block;
+	margin:0;
+	padding:0;
+}
+#gost #ventas_detalle{
+	height:auto;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	width:100%;
+	border:0px solid #00ff1f;
+	background-color:transparent;
+	margin:0;
+	padding:.2cm;
+	left:0;rigth:0;
+}
+.pay_dir, .cli_dir{
+	display:block;
+	height:auto;
+	border:0px solid red;
+	overflow:hidden;
+	width:100%;
+}
+.pay{
+	font-family:Times New Roman,serif;
+	display:block;
+	height:8em;
+	overflow:hidden;
+}
+.pay_dir .pay{
+	text-shadow:none;
+	font-size:14pt;
+	height:6em;
+}
+.text2,.label2{
+	border:none;
+	background-color:transparent;
+	color:#000;
+}
+.tfoot{
+	background-color:transparent;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	width:100%;
+}
+.tfoot .totales{
+	width:5cm;
+	right:1px;top:3px;
+	position:absolute;
+	margin:0px .2cm;
+	padding:5px 0px;
+	text-align:right;
+	background-color:white;
+	border:1px solid black;
+	overflow:hidden;
+	border-radius:6px;
+	box-shadow:-2px 2px 0px #888;
+}
+.tfoot .totales>div:nth-child(odd){
+/*	background-color:#CCC;*/
+}
+.tfoot div .text2 input,.tfoot div .label2 label{
+	font-family: Arial Narrow, robotoC, Times New Roman;
+	font-size:10pt;
+	font-weight:bold;
+	position:relative;
+	display:inline-block;
+	width:100%;
+	line-height:normal;
+	text-transform:uppercase;
+}
+.tfoot .totales .text2 input{
+	padding-right:3px;
+}
+.tfoot #ventas_discount,.tfoot #ventas_envio{
+	border-bottom:3px double #000000;
+}
+.tfoot div .text2{
+	margin:0;
+	padding:0 3px 0 0;
+	border-radius:0;
+	position:relative;
+	display:inline-block;
+}
+.tfoot label span:nth-child(1){
+	display:inline-block;
+}
+.tfoot label span{
+	display:none;
+}
+.tfoot label input{
+	display:none;
+	width:0px;
+}
+.tfoot .footGlosa{
+	border:0px solid;
+	width:12cm;
+	padding-top:12px;
+	min-height:100%;
+	overflow:visible;
+}
+#ventas_mark_stamp{
+	position:relative;
+	left:0;
+	display:block;
+	border:0px solid;
+	text-align:center;
+	width:100%;
+}
+#ventas_mark_stamp>img{
+	width:180px;
+}
+.tfoot .footGlosa .glosa{
+	border:0px solid #000000;
+	border-radius:6px;
+	margin:0;
+	width:12cm;
+	height:auto;
+	overflow-y:hidden;
+	max-height:none;
+	bottom:auto;
+	background-color:transparent;
+	position:relative;
+}
+#txtsize{
+	display:none;
+}
+#glosaEditable{
+	font-family:sans-serif,Arial;
+	font-size:16px;
+	font-weight:bold;
+	text-align:justify;
+}
+.tfoot>span{
+	display:none;
+}
+input,textarea{
+	font-family:Times New Roman,serif;
+	color:#000;
+}
+#ventas-ed td.read,.list-ed td.read{
+	background-color:transparent;
+}
+#ventas-ed td.read input,.list-ed td.read input{
+	color:#000;
+}
+.read input{
+	color:#000;
+}
+input#ventas_fecha_view,input#ventas_id,input#ventas_fact{
+	font-size: 14pt;
+	font-weight: bold;
+}
+input.medio{
+	width:95%;
+}
+#ventas-ed,.list-ed{
+	background-color:transparent;
+	box-shadow:none;
+	table-layout:fixed;
+	width:100%;
+	max-width:100%;
+	margin:0;
+	padding:0;
+	left:0;right:0;
+	height:auto;
+	overflow-x:visible;
+	overflow-y:visible;
+}
+th{
+	font-family:Times New Roman,serif;
+	font-size:8pt;
+	color:#000;
+}
+.head_v{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	border:0px solid #B57942;
+	margin:0 auto;
+	padding:0px;
+	border-radius:0px;
+}
+.head_v #headEditable{
+	text-align:right;
+	line-height:1;
+}
+#ventas-ed thead,.list-ed thead{
+	background-color:transparent;
+}
+#ventas-ed tr,#ventas-ed tr:nth-child(even),.list-ed tr,.list-ed tr:nth-child(even){
+	background-color:transparent;
+}
+.list-ed thead{
+	display:table-header-group;
+}
+.list-ed thead tr{
+	border-top:1px solid #000;
+	height:auto;
+}
+.list-ed tr{
+	border-top:1px solid #000;
+	overflow:hidden;
+	height:100%;
+	page-break-inside:avoid;
+}
+.list-ed tr:last-child{
+	border-bottom:1px solid #000;
+}
+#ventas-ed tfoot{
+	background-color:transparent;
+}
+#ventas-ed thead th:nth-child(odd),.list-ed thead th:nth-child(odd){
+	background-color:transparent;
+	text-align: center;
+}
+#ventas-ed thead th:nth-child(even),.list-ed thead th:nth-child(even){
+	background-color:transparent;
+	text-align: center;
+}
+#ventas-ed tbody td:nth-child(odd),.list-ed tbody td:nth-child(odd){
+	background-color:transparent;
+}
+#ventas-ed tbody tr:nth-child(even){
+/*	background-color:#CCC;*/
+}
+#ventas-ed tbody tr td input,.list-ed tbody tr td input{
+	font-family:robotoC, Arial Narrow, Times New Roman;
+	color:#000;
+	overflow:hidden;
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size:8pt;
+	line-height:1.4;
+	text-transform:uppercase;
+}
+#ventas-ed thead{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+#ventas-ed tbody{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+.prnhide,.prnhide_head,.prnhideDoble{
+	display:none;
+}
+.foot_prn #return{
+	width:5cm;
+	font-family:Times New Roman,serif;
+}
+.foot_prn #no_return{
+	font-size:10pt;
+}
+.foot_prn{
+	background-color:transparent;
+	display:block;
+	position:fixed;
+	bottom:1mm;
+	max-width:10cm;
+	color: #000;
+	line-height:1;
+	z-index:200;
+}
+#v-ref .v-ref:first-child div{
+	display: none;
+}
+
+table.list-ed tbody tr td{
+	font-family:robotoC;
+	color:#000000;
+}
